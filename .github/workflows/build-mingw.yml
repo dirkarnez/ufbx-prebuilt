@@ -53,6 +53,7 @@ jobs:
             C:\Windows\System32;
             set CD_LINUX=%CD:\=/%
             xcopy /H /Y /C "dirkarnez_ufbx\CMakeLists.txt" "ufbx_ufbx" &&^
+            xcopy /H /Y /C "dirkarnez_ufbx\cmake\config.cmake.in" "ufbx_ufbx\cmake\" &&^
             gcc --version &&^
             cd ufbx_ufbx &&^
             cmake.exe -G "MinGW Makefiles" ^
