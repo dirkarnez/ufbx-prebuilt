@@ -49,7 +49,8 @@ jobs:
             ${{ github.workspace }}\mingw64;^
             ${{ github.workspace }}\mingw64\bin;^
             ${{ github.workspace }}\PortableGit-2.38.1-64-bit\bin;^
-            ${{ github.workspace }}\cmake-3.22.2-windows-x86_64\bin;
+            ${{ github.workspace }}\cmake-3.22.2-windows-x86_64\bin;^
+            C:\Windows\System32;
             set CD_LINUX=%CD:\=/%
             xcopy /H /Y /C "dirkarnez_ufbx\CMakeLists.txt" "ufbx_ufbx" &&^
             gcc --version &&^
