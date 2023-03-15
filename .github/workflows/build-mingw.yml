@@ -73,6 +73,6 @@ jobs:
         - name: Release prebuilt
           uses: ncipollo/release-action@v1
           with:
-            artifacts: "cmake-build/${{ env.cmakeInstallationPath }}/${{ env.mingwTargetZip }}"
+            artifacts: "ufbx_ufbx/cmake-build/${{ env.cmakeInstallationPath }}/${{ env.mingwTargetZip }}"
             allowUpdates: true
             token: ${{ secrets.GITHUB_TOKEN }}
